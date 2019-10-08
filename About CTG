@@ -1,0 +1,30 @@
+The dataset consists of measurements of fetal heart rate (FHR) and uterine contraction (UC) features 
+on cardiotocograms classified by expert obstetricians
+
+Attribute Information:
+LB - FHR baseline (beats per minute)
+AC - # of accelerations per second
+FM - # of fetal movements per second
+UC - # of uterine contractions per second
+DL - # of light decelerations per second
+DS - # of severe decelerations per second
+DP - # of prolongued decelerations per second
+ASTV - percentage of time with abnormal short term variability
+MSTV - mean value of short term variability
+ALTV - percentage of time with abnormal long term variability
+MLTV - mean value of long term variability
+Width - width of FHR histogram
+Min - minimum of FHR histogram
+Max - Maximum of FHR histogram
+Nmax - # of histogram peaks
+Nzeros - # of histogram zeros
+Mode - histogram modeMean - histogram mean
+Median - histogram medianVariance - histogram varianceTendency - histogram tendency
+CLASS - FHR pattern class code (1 to 10) 
+NSP - fetal state class code (N=normal; 
+S=suspect; P=pathologic)
+
+Model:
+This is an classification problem . Using Random Forest we are trying to find the Fetal state class code.
+(N=normal; S=suspect; P=pathologic).
+Achieved Accuracy: 95.3%
